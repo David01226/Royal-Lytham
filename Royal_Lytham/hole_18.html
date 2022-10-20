@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole 18 | Royal Lytham & St Annes Golf Club</title>
+
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="holes.css">
+    
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Nav Menu -->
+    <script src="nav.js"></script>
+
+    <!-- Scroll Menu -->
+    <script src="scroll-menu.js"></script>
+
+    <!-- splide -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+</head>
+
+
+
+<body onresize, onmousemove="reSize()">
+
+    
+
+    <!-- Header -->
+    
+    <section class="main-header">
+        <div class="main-header-container">
+              <div class="main-header-logo">
+                    <a href="index.html"><img src="img/index/main_logo_1.png" alt=""></a>
+                    
+              </div>
+  
+              <div class="main-header-options">
+                    <div class="top-options">
+                          <a href="">VISITOR BOOKING</a>
+                          <a href="">MEMBERS</a>
+                    </div>
+                    <div class="bottom-options">
+                          <div class="option">
+                                <a class="current" href="overview.html">Golf</a>
+                                <div class="drop-down">
+                                      <a href="overview.html">Course Overview</a>
+                                      <a class="selected" href="hole_1.html">Course Tour</a>
+                                      <a href="green_fees.html">Green Fees</a>
+                                      <a href="corporate.html">Corporate Golf Days</a>
+                                </div>
+                          </div>
+                          
+                          <div class="option">
+                                <a class="header-link" href="heritage.html">Heritage</a>
+                                
+                          </div>
+  
+                          <div class="option">
+                                <a class="header-link" class="header-link" href="hospitality.html">Hospitality</a>
+                                
+                          </div>
+  
+                          <div class="option">
+                                <a class="header-link" href="accomodation.html">Accomodation</a>
+                                
+                          </div>
+  
+  
+                          <div class="option">
+                                <a class="header-link" href="contact.html">Contact</a>
+                                
+                          </div>
+  
+                    </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- scroll-header -->
+
+    <section class="scroll-header">
+        <div class="scroll-header-container">
+            <div class="scroll-header-logo">
+                    <a href="index.html">
+                        <img src="img/index/scroll-header-logo.png" alt="">
+                    </a>
+            </div>
+            <div class="scroll-header-button">
+                    <a id="menuButton" href="">
+                        <p>MENU</p>
+                        <div class="hamburger-menu">
+                                <div class="line-1" ></div>
+                                <div class="line-2" ></div>
+                                <div class="line-3" ></div>
+                        </div>
+                    </a>
+                    
+                    
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile-header -->
+
+    <div class="mobile-menu-wrapper">
+        <a id="mobile-menuButton" href="">
+            <p>MENU</p>
+            <div class="hamburger-menu">
+                    <div class="line-1" ></div>
+                    <div class="line-2" ></div>
+                    <div class="line-3" ></div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Side-Hamburger-Menu -->
+
+    <div class="scroll-aside">
+        <div class="scroll-close-button">
+            <button class="close">
+                    <div class="x-line-1"></div>
+                    <div class="x-line-2"></div>
+            </button>
+        </div>
+
+        <div class="side-hamburger-img">
+            <a href="index.html">
+                    <img src="img/index/main_logo_1.png" alt="">
+            </a>
+        </div>
+
+        <div class="hamburger-options">
+            <div class="hamburger-option-multiple">
+
+                        <div class="hamburger-collapsible">
+                                <input type="checkbox" id="hamburger-collapsible-head">
+                                <label class="hamburger-label" for="hamburger-collapsible-head" >
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+    s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+                                    </svg>
+                                    <p>Golf</p>
+                                </label>
+                                <div class="collapsible-links">
+                                    <a href="overview.html">Course Overview</a>
+                                    <a href="hole_1.html">Course Tour</a>
+                                    <a href="green_fees.html">Green Fees</a>
+                                    <a href="corporate.html">Corporate Golf Days</a>
+                                </div>
+                        </div>
+
+                    
+            </div>
+
+            <div class="hamburger-option">
+                    <a href="heritage.html">Heritage</a>
+            </div>
+
+            <div class="hamburger-option">
+                    <a href="hospitality.html">Hospitality</a>
+            </div>
+
+            <div class="hamburger-option">
+                    <a href="accomodation.html">Accommodation</a>
+            </div>
+
+            <div class="hamburger-option">
+                    <a href="contact.html">Contact Us</a>
+            </div>  
+            <div class="white-line"></div>
+        </div>
+
+        <div class="side-hamburger-text">
+            <a href="Tel: +441253724206">Telephone +44 (0)1253 724206</a>
+        </div>
+    </div>
+
+    <div class="scroll-backdrop"></div>
+  
+    <!-- More-info-side-Hamburger-Menu -->
+
+    <div class="backdrop"></div>
+
+    <aside>
+        <div class="close-button">
+            <button class="close">&times;</button>
+            <p><strong>CLOSE</strong></p>
+        </div>
+
+        <div class="hole-info-content">
+            <div class="hole-info-left">
+                <div class="hole-info-main">
+                    <h1>Hole Eighteen</h1>
+                    <p>Who can forget Tony Jacklin’s immaculate drive on this hole in the 1969 Open? It is the classic finishing hole: two lines of bunkers cross the fairway at an angle from the tee. The green is the longest on the course making correct club selection crucial for the approach shot.</p>
+                    <img src="img/course_tour/Hole_18/stats18.PNG" alt="">
+                </div>
+                <div class="hole-info-nav-buttons-flex-start">
+                    <div class="previous-hole">
+                        <a href="hole_17.html">
+                            <svg width="40px" height="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M256,5.333C114.88,5.333,0,117.76,0,256s114.88,250.667,256,250.667S512,394.24,512,256S397.12,5.333,256,5.333z
+                                                        M256,485.333C126.613,485.333,21.333,382.4,21.333,256S126.613,26.667,256,26.667S490.667,129.493,490.667,256
+                                                    S385.387,485.333,256,485.333z" />
+                                            <path d="M369.28,247.467l-181.653-133.44c-4.693-3.627-11.307-2.773-14.933,1.92c-3.627,4.693-2.773,11.307,1.92,14.933
+                                                    c0.107,0.107,0.32,0.213,0.427,0.32L344.96,256L175.04,380.693c-4.8,3.52-5.76,10.133-2.24,14.933
+                                                    c3.52,4.8,10.133,5.76,14.933,2.24L369.387,264.64c4.8-3.52,5.76-10.133,2.24-14.933
+                                                    C370.88,248.853,370.133,248.107,369.28,247.467z" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                            <p>PREV HOLE</p>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+
+                <!-- Image zoom hover -->
+    
+            <div class="hole-info-right">
+                <div class="container">
+                    <div class="hole-zoom-wrapper">
+                        <div class="hole-zoom-text">
+                            <p>HOVER TO ZOOM IN</p>
+                            <img src="img/course_tour/zoom-icon.png" alt="">
+                        </div>
+                        <img class="image" src="img/course_tour/Hole_18/zoom18.jpg" alt="">
+                        <div class="lens">
+                
+                        </div>
+                        <div class="result">
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+
+    
+
+    
+    <!-- Main Section -->
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.1.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.2.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.3.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.4.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.5.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.6.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.7.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.8.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.9.webp" alt=""></li>
+                  <li class="splide__slide"><img src="img/course_tour/Hole_18/Hole_18.10.webp" alt=""></li>
+              </ul>  
+        </div>
+
+        <div class="hole-info">
+            <h2>Hole Eighteen</h2>
+            <p>Par 4, Yards 410, Stroke 12</p>
+            <div class="hole-links">
+
+                <div class="hole-links-top">
+                    <div class="hole-link">
+                        <a href="hole_1.html">1</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_2.html">2</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_3.html">3</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_4.html">4</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_5.html">5</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_6.html">6</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_7.html">7</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_8.html">8</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_9.html">9</a>
+                    </div>
+                </div>
+                    
+                <div class="hole-links-bottom">
+                    <div class="hole-link">
+                        <a href="hole_10.html">10</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_11.html">11</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_12.html">12</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_13.html">13</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_14.html">14</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_15.html">15</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_16.html">16</a>
+                    </div>
+
+                    <div class="hole-link">
+                        <a href="hole_17.html">17</a>
+                    </div>
+
+                    <div class="circle-link">
+                        <a href="hole_18.html">18</a>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+
+        <div class="more-hole-info">
+            <div class="moreButton" id="moreButton">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+           <g>
+               <g>
+                   <g>
+                       <path d="M256,5.333C114.88,5.333,0,117.76,0,256s114.88,250.667,256,250.667S512,394.24,512,256S397.12,5.333,256,5.333z
+                            M256,485.333C126.613,485.333,21.333,382.4,21.333,256S126.613,26.667,256,26.667S490.667,129.493,490.667,256
+                           S385.387,485.333,256,485.333z"/>
+                       <path d="M369.28,247.467l-181.653-133.44c-4.693-3.627-11.307-2.773-14.933,1.92c-3.627,4.693-2.773,11.307,1.92,14.933
+                           c0.107,0.107,0.32,0.213,0.427,0.32L344.96,256L175.04,380.693c-4.8,3.52-5.76,10.133-2.24,14.933
+                           c3.52,4.8,10.133,5.76,14.933,2.24L369.387,264.64c4.8-3.52,5.76-10.133,2.24-14.933
+                           C370.88,248.853,370.133,248.107,369.28,247.467z"/>
+                   </g>
+               </g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+           </g>
+           <g>
+                </g></svg>
+
+                <a href="">Hole information</a>
+            </div> 
+        </div>
+
+        <div class="fade-down">
+
+        </div>
+  
+        <div class="fade-up">
+  
+        </div>
+        
+
+        
+    </section>
+
+    <!-- Mobile hole links -->
+
+    <div class="mobile-hole-links">
+                
+        <div class="mobile-hole-links-top">
+            <div class="mobile-hole-link">
+                <a href="hole_1.html">1</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_2.html">2</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_3.html">3</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_4.html">4</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_5.html">5</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_6.html">6</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_7.html">7</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_8.html">8</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_9.html">9</a>
+            </div>
+        </div>
+            
+        <div class="mobile-hole-links-bottom">
+            <div class="mobile-hole-link">
+                <a href="hole_10.html">10</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_11.html">11</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_12.html">12</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_13.html">13</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_14.html">14</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_15.html">15</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_16.html">16</a>
+            </div>
+
+            <div class="mobile-hole-link">
+                <a href="hole_17.html">17</a>
+            </div>
+
+            <div class="mobile-selected-link">
+                <a href="hole_18.html">18</a>
+            </div>
+        </div>
+            
+    </div>
+    
+    
+    <!-- Footer -->
+    
+    <section class="footer">
+          <div class="footer-container">
+                <div class="footer-left">
+                  <a href="index.html"><img src="img/index/main_logo_1.png" alt=""></a>
+                      <p>Walk The Path Of Legends</p>
+                </div>
+    
+                <div class="footer-right">
+                      <div class="footer-address">
+                            <p>Royal Lytham & St Annes Golf Club</p>
+                            <p>Links Gate, Lytham St. Annes Lancashire, FY8 3LQ</p>
+                      </div>
+                      <div class="footer-contact">
+                            <p>Tel: +44(0)1253 724206</p>
+                            <p>Email:<a href="mailto:bookings@royallytham.org"> bookings@royallytham.org</a></p>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 23.101 23.101" style="enable-background:new 0 0 23.101 23.101;" xml:space="preserve">
+    <g>
+        <path d="M8.258,4.458c0-0.144,0.02-0.455,0.06-0.931c0.043-0.477,0.223-0.976,0.546-1.5c0.32-0.522,0.839-0.991,1.561-1.406
+            C11.144,0.208,12.183,0,13.539,0h3.82v4.163h-2.797c-0.277,0-0.535,0.104-0.768,0.309c-0.231,0.205-0.35,0.4-0.35,0.581v2.59h3.914
+            c-0.041,0.507-0.086,1-0.138,1.476l-0.155,1.258c-0.062,0.425-0.125,0.819-0.187,1.182h-3.462v11.542H8.258V11.558H5.742V7.643
+            h2.516V4.458z"/>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+                            </svg>
+                      </div>
+                      <div class="footer-links">
+                            <a href="">Terms & Conditions</a>
+                            <a href="">Privacy & Policies</a>
+                      </div>
+                </div>
+          </div>
+    </section>
+    
+    <!-- Hole Zoom in -->
+    <script src="script.js"></script>
+    
+    <script>
+        new Splide( '.splide', {
+            type  : 'fade',
+            autoplay: true, 
+            pauseOnFocus:false,
+            pauseOnHover:false, 
+            pagination: boolean = false,
+            rewind: boolean = true,
+            arrowPath: string = 'm 16 2 l -1 1 l 14.5 14.6 l -14.5 14.5 l 1 0.9 l 15.531 -15.516 z',
+            breakpoints: {
+                768: { pagination: true, },
+            },
+        } ).mount();
+    </script>
+    
+    </body>
+    </html>

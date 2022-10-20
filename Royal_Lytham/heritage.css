@@ -1,0 +1,301 @@
+#image-carousel {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 770px) {
+    #image-carousel {
+        height: 600px;
+    }
+}
+
+#image-carousel .splide__track {
+    width: 100%;
+    height: 100%;
+}
+
+#image-carousel .splide__list {
+    width: 100%;
+    height: 100%;
+}
+
+#image-carousel .splide__slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heritage-bg-1, .heritage-bg-2, .heritage-bg-3, .heritage-bg-4, .heritage-bg-5, .heritage-bg-6, .heritage-bg-7, .heritage-bg-8 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/heritage/hero_1_seve.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heritage-bg-1 {
+    background-image: url(img/heritage/hero_1_seve.jpg);
+}
+
+.heritage-bg-2 {
+    background-image: url(img/heritage/hero_2_womens_open.jpg);
+}
+
+.heritage-bg-3 {
+    background-image: url(img/heritage/hero_3_player.jpg);
+}
+
+.heritage-bg-4 {
+    background-image: url(img/heritage/hero_4_nicklaus.jpg);
+}
+
+.heritage-bg-5 {
+    background-image: url(img/heritage/hero_5_duval.jpg);
+}
+
+.heritage-bg-6 {
+    background-image: url(img/heritage/hero_6_curtis_cup.jpg);
+}
+
+.heritage-bg-7 {
+    background-image: url(img/heritage/hero_7_walker_cup.jpg);
+}
+
+.heritage-bg-8 {
+    background-image: url(img/heritage/hero_8_dechambeau.jpg);
+}
+
+
+.heritage-hero-text-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.heritage-hero-text {
+    position: absolute;
+    bottom: 11%;
+    left: 8%;
+    color: #FFFFFF;
+    z-index: 15;
+}
+
+@media screen and (max-width: 550px) {
+    .heritage-hero-text {
+        bottom: 5%;
+        left: 7%;
+    }
+}
+
+.heritage-hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-weight: 100;
+}
+
+.heritage-hero-text p {
+    font-size: 21px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+    display: inline-block;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+.heritage-hero-text a {
+    font-size: 21px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+    display: inline-block;
+    font-weight: 100;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 770px) {
+    .heritage-hero-text h1 {
+        font-size: 26px;
+    }
+
+    .heritage-hero-text a, .heritage-hero-text p {
+        font-size: 19px;
+    }
+}
+
+.zoom-out {
+    width: 100%;
+    height: 100%;
+    animation: zoom-out 9s infinite linear;
+}
+
+
+@keyframes zoom-out {
+    from{
+       transform: scale(1.1);
+    }
+
+    to{
+        transform: scale(1);
+    }
+} 
+
+
+.splide__arrow {
+    width: 50px!important;
+    height: 50px!important;
+    background: none!important;
+}
+
+.splide__arrow svg {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.splide__arrow--next {
+    right: 1em;
+    fill: white;
+    opacity: 1;
+}
+
+.splide__arrow--prev {
+    left: 1em;
+    fill: white;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px) {
+    .splide__arrows {
+        display: none;
+    }
+}
+
+
+/* Main section */
+
+.heritage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.heritage-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heritage-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+    max-width: 1415px;
+    width: 80%;
+}
+
+.heritage-text h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #111B36;
+    line-height: 1.45;
+    font-weight: 100;
+}
+
+
+
+.heritage-images {
+    margin: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(454px, 454px));
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 95%;
+    max-width: 1800px;
+}
+
+@media screen and (max-width: 565px) {
+    .heritage-images {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: unset;
+        column-gap: unset;
+        row-gap: unset;
+        width: 90%;
+    }
+}
+
+
+.heritage-img {
+    position: relative;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 565px) {
+    .heritage-img {
+        margin: 0 0 12px 0;
+    }
+}
+
+.heritage-img:hover {
+    transform: scale(103%);
+    z-index: 0;
+    box-shadow: 0 40px 40px -30px rgb(0 0 0 / 50%);
+}
+
+
+.heritage-img h3 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-size: 1.66667rem;
+    font-weight: 100;
+    z-index: 3;
+}
+
+.heritage-img img {
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 565px) {
+    .heritage-img img {
+        width: 100%;
+    }
+}
+
+.heritage-img img:hover {
+   filter: brightness(70%);
+}
+
+
+
+.heritage-fade-up {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: linear-gradient(to top,#0d274e 0,transparent 100%);
+    z-index: 2;
+    width: 100%;
+    height: 40%;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}

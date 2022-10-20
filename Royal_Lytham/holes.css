@@ -1,0 +1,704 @@
+.splide {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .splide {
+        height: 500px;
+        margin-bottom: 0px;
+    }
+
+    .splide__arrows {
+        display: none;
+    }
+}
+
+.splide__track {
+    width: 100%;
+    height: 100%;
+
+}
+
+.splide__list {
+    width: 100%;
+    height: 100%;
+}
+
+.splide__slide {
+    width: 100%;
+    height: 100%;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.splide__arrow {
+    width: 50px!important;
+    height: 50px!important;
+    background: none!important;
+}
+
+.splide__arrow svg {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.splide__arrow--next {
+    right: 1em;
+    fill: white;
+    opacity: 1;
+}
+
+.splide__arrow--prev {
+    left: 1em;
+    fill: white;
+    opacity: 1;
+}
+
+.hole-info {
+    position: absolute;
+    bottom: 6%;
+    left: 7%;
+    z-index: 5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+@media screen and (max-width: 1280px) {
+    .hole-info {
+        bottom: 3%;
+        left: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hole-info {
+        display: none;
+    }
+}
+
+.hole-info h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 100;
+}
+
+.hole-info p {
+    font-size: 18px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.hole-links {
+    font-size: 22px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1280px) {
+    .hole-links {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hole-links {
+        flex-direction: column;
+    }
+}
+
+.hole-links-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.hole-links-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle-link {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.hole-link {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 1280px) {
+    .hole-link, .circle-link  {
+        margin-right: unset;
+    }
+}
+
+.hole-link:hover {
+    border: 2px solid #acacac;
+}
+
+.hole-links a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.more-hole-info {
+    position: absolute;
+    bottom: 6%;
+    right: 7%;
+    z-index: 5;
+    
+}
+
+@media screen and (max-width: 1280px) {
+    .more-hole-info {
+        bottom: 3%;
+        right: 35px;
+    }
+}
+
+.moreButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more-hole-info a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 100;
+    color: white;
+}
+
+.more-hole-info svg{
+    width: 40px;
+    height: 40px;
+    fill: white;
+    margin-right: 20px;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1280px) {
+    .more-hole-info a {
+        font-size: 18px;
+    }
+
+    .more-hole-info svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .more-hole-info a {
+        font-size: 16px;
+    }
+
+    .more-hole-info svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+/* mobile hole links */
+
+.splide__pagination {
+    position: absolute;
+    z-index: 11 !important;
+    bottom: 20px !important;
+    left: 62px !important;
+    transform: translateX(-50%);
+    padding: 0;
+    width: 95px !important;
+}
+
+.splide__pagination__page {
+    background-color: transparent !important;
+    opacity: 1 !important;
+    border: 1px solid #FFFFFF !important;
+}
+
+.splide__pagination__page.is-active {
+    background-color: #FFFFFF !important;
+}
+
+.mobile-hole-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-hole-links-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-hole-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-hole-links-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-selected-link {
+    width: calc(100% / 9);
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobile-selected-link a {
+    color: #60A04D;
+}
+
+.mobile-hole-link {
+    width: calc(100% / 9);
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.mobile-hole-link a {
+    color: #111B36;
+}
+
+@media screen and (min-width: 769px) {
+    .mobile-hole-links {
+        display: none;
+    }
+
+}
+
+
+
+
+/* Side-Hamburger-Menu */
+
+aside {
+    position: fixed;
+    transition: all 0.4s ease;
+    right: -1177px;
+    top: 0px;
+    width: 1177px;
+    background-color: #FFFFFF;
+    padding: 80px 110px;
+    z-index: 20;
+    overflow-x: hidden;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: right .4s ease;
+}
+
+aside.active {
+    right: 0;
+}
+
+@media screen and (max-width: 1177px) {
+    aside.active {
+        width: 100%;
+        padding: 80px 50px 80px 110px;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    aside.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1500px;
+        padding: 80px 88px 80px 110px;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    aside.active {
+        padding: 80px 30px 80px 30px;
+    }
+
+}
+
+
+
+
+aside button.close {
+    font-size: 28px;
+    border: 0;
+    background-color: transparent;
+    padding: 7px;
+    font-family: sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    border: 2px solid #acacac;
+    line-height: 0.6;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #111B36;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.35);
+    backdrop-filter: blur(5px);
+    z-index: 6;
+}
+
+.backdrop.active {
+    display: block;
+} 
+
+.close-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 32px;
+    left: 40px;
+}
+
+@media screen and (max-width: 730px) {
+    .close-button {
+        left: 30px;
+    }
+}
+
+.close-button p {
+    margin-left: 35px;
+    font-size: 18px;
+    color: #111B36;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+}
+
+.hole-info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 940px) {
+    .hole-info-content {
+        flex-direction: column;
+    }
+
+}
+
+.hole-info-left {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+
+.hole-info-left h1 {
+    font-size: 34px;
+    color: #111B36;
+    line-height: 1.4;
+    font-weight: 100;
+}
+
+.hole-info-main p {
+    color: #555555;
+    font-size: 18px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1.7;
+    margin-top: 45px;
+}
+
+@media screen and (max-width: 430px) {
+    .hole-info-main p {
+        font-size: 16px;
+    }
+}
+
+.hole-info-left img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 940px) {
+    .hole-info-left img {
+        width: 490px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .hole-info-left img {
+        width: 100%;
+    }
+}
+
+.hole-info-nav-buttons, .hole-info-nav-buttons-flex-start, .hole-info-nav-buttons-flex-end {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.hole-info-nav-buttons {
+    justify-content: space-between;
+}
+
+
+
+.hole-info-nav-buttons-flex-start {
+    justify-content: flex-start;
+}
+
+.hole-info-nav-buttons-flex-end {
+    justify-content: flex-end;
+}
+
+
+
+.previous-hole {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.next-hole {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.next-hole a, .previous-hole a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.next-hole p, .previous-hole p {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    color: #111B36;
+    letter-spacing: .03516em;
+    font-weight: 600;
+    line-height: 0;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 430px) {
+    .next-hole p, .previous-hole p {
+        font-size: 14px;
+    }
+}
+
+.previous-hole svg {
+    margin-right: 20px;
+    transform: rotate(180deg);
+    fill: #111B36;
+    transition: all 0.2s ease;
+}
+
+.next-hole svg {
+    fill: #111B36;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 430px) {
+    .previous-hole svg, .next-hole svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+.next-hole a:hover p, .previous-hole a:hover p {
+    color: #60A04D;
+}
+
+.next-hole a:hover svg, .previous-hole a:hover svg {
+    fill: #60A04D;
+}
+
+
+.hole-info-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 940px) {
+    .hole-info-left {
+        width: 100%;
+    }
+
+    .hole-info-right {
+        width: 100%;
+    }
+
+}
+
+/* Hole-zoom */
+
+.container {
+    width: 300px;
+    height: 600px;
+    z-index: 21;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.05s linear;
+    transition: border 3s ease;
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 225px;
+        height: 450px;
+    }
+
+}
+
+.container:hover {
+    border: 1px solid rgba(0, 0, 0, 0.479);
+}
+
+.container.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+
+
+
+
+.hole-zoom-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.hole-zoom-text {
+    position: absolute;
+    top: 85px;
+    left: -84px;
+    z-index: 11;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10px;
+    transform: rotate(270deg);
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: zoom-in;
+}
+
+@media screen and (max-width: 550px) {
+    .hole-zoom-text {
+        display: none;
+    }
+
+}
+
+.hole-zoom-text p {
+    font-size: 17px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    letter-spacing: .0332em;
+    margin-right: 14px;
+}
+
+.hole-zoom-text img {
+    width: 28px;
+    height: 28px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.lens {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.result {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 360px) {
+    .result {
+        width: 225px;
+        height: 450px;
+    }
+
+}
+
+.container:hover .result{
+    visibility: visible;
+    opacity: 1;
+    cursor: zoom-in;
+}
